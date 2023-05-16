@@ -1,7 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://bit.dev/docs/workspace/workspace-configuration
- **/ {
+ **/{
   "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
   /**
    * main configuration of the Bit workspace.
@@ -38,9 +38,12 @@
      */
     "packageManager": "teambit.dependencies/pnpm",
     "policy": {
-      "dependencies": {},
+      "dependencies": {
+        "express": "^4.18.2"
+      },
       "peerDependencies": {}
-    }
+    },
+    "linkCoreAspects": true
   },
   /**
    * workspace variants allow to set different subsets of configuration for components in your
@@ -65,6 +68,9 @@
    * see https://bit.dev/reference/generators/create-generator/ for more info.
    **/
   "teambit.generator/generator": {
-    "envs": ["teambit.node/node", "teambit.react/react-env"]
+    "envs": [
+      "teambit.node/node",
+      "teambit.react/react-env"
+    ]
   }
 }

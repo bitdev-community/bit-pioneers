@@ -1,4 +1,3 @@
-import type { ReactNode } from 'react';
 import styles from './loader.module.scss';
 
 export function Loader() {
