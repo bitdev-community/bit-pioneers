@@ -1,1 +1,2 @@
-export { goodbye } from './goodbye';
+import router from './goodbye';
+export default router;

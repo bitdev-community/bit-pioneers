@@ -1,13 +1,6 @@
 import type { ReactNode } from 'react';
+import styles from './loader.module.scss';
 
-export type LoaderProps = {
-  children?: ReactNode;
-};
-
-export function Loader({ children }: LoaderProps) {
-  return (
-    <div>
-      {children}
-    </div>
-  );
+export function Loader() {
+  return <div className={styles.loader} />;
 }
